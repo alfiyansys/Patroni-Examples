@@ -1,4 +1,4 @@
-# current host: 10.252.254.103/24
+# current host: 10.252.254.101/24
 # etcd host: 10.252.254.100
 
 scope: postgres # rename scope by your own team
@@ -7,7 +7,7 @@ name: database-host-1 # current host name
 
 restapi:
  listen: 0.0.0.0:8008 # listen to all
- connect_address: 10.252.254.103:8008 # current host IP, how patroni managament system connect to this machine
+ connect_address: 10.252.254.101:8008 # current host IP, how patroni managament system connect to this machine
 
 etcd:
  host: 10.252.254.100:2379 # point to etcd host
@@ -45,7 +45,7 @@ bootstrap:
 
 postgresql:
  listen: 0.0.0.0:5432 # listen to all, at the moment
- connect_address: 10.252.254.103:5432 # current host IP, how to connect postgresql to this machine
+ connect_address: 10.252.254.101:5432 # current host IP, how to connect postgresql to this machine
  data_dir: /data/patroni # data directory location
  pgpass: /tmp/pgpass # temporary pgpass
  authentication: # replication & su authentication
