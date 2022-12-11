@@ -61,8 +61,6 @@ postgresql:
 tags:
  nofailover: false
  noloadbalance: false
- clonefrom: false
- nosync: false
 
 
 
